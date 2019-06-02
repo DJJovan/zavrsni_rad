@@ -73,24 +73,29 @@
 				</div>
 			</div>
 		</section>
-
-		<div id="gallery" class="box"><h2>GALLERY</h2></div>
-		<section class="gallery">
-			<div class="container-fluid">
-
-				<img class="col-6" src="img/Slika1.jpg" alt="">
-				<img class="col-6" src="img/Slika2.jpg" alt="">
-				<img class="col-4" src="img/Slika3.jpg" alt="">
-				<img class="col-4" src="img/Slika4.jpg" alt="">
-				<img class="col-4" src="img/Slika5.jpg" alt="">
-				<img class="col-6" src="img/Slika9.jpg" alt="">
-				<img class="col-6" src="img/Slika11.jpg" alt="">
-				<img class="col-4" src="img/Slika.jpg" alt="">
-
-
+		<div class="overlay">
+				<img src="img/slika1.jpeg" alt="">
+				<span class='close'>&#8855;</span>
+		
+				<div class='arrows'>
+					<span onclick='prev()' class='left'>&#8882;</span>
+					<span onclick='next()' class='right'>&#8883;</span>
+				</div>
+		
 			</div>
 
-		</section>
+		<div id="gallery" class="box"><h2>GALLERY</h2></div>
+		<section class ="gallery" >
+                <img src="img/thumbs/1.jpg" data-no='1' alt="">
+                <img src="img/thumbs/2.jpg" data-no='2' alt="">
+                <img src="img/thumbs/3.jpg" data-no='3' alt="">
+				<img src="img/thumbs/4.jpg" data-no='4' alt="">
+				<img src="img/thumbs/5.jpg" data-no='5' alt="">
+				<img src="img/thumbs/6.jpg" data-no='6' alt="">
+				<img src="img/thumbs/7.jpg" data-no='7' alt="">
+				<img src="img/thumbs/8.jpg" data-no='8' alt="">
+                
+            </section>
 
 
 
@@ -105,6 +110,45 @@
 			</ul>
 
 		</section>
+		<div  id="book" class="box"><h2>BOOK A TOUR</h2></div>
+		<section>
+				<div class="container">
+        
+						<div>
+							<input type='number' max='31' min='1' value='1' id="dan">
+							<label for="dan">Dan</label>
+						</div>
+						<div>
+							<input type='number' max='12' min='1' value='1' id="mesec">
+							<label for="mesec">Mesec</label>
+						</div>
+						<div>
+							<input type='number' min='1900' max='2019' value='1900' id="godina">
+							<label for="godina">Godina</label>
+						</div>
+						<input type="text" id="name" placeholder="name"><br>
+						<button onclick="setAll()">Book a tour!</button>
+
+						
+						
+						
+					</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
 	</main>
 
 
